@@ -1,7 +1,7 @@
 // ================================
-// app/program/page.tsx (Program Yayasan)
+// components/ProgramSection.tsx
 // ================================
-const programList = [
+const programs = [
 { title: "Santunan Yatim", desc: "Berbagi kebahagiaan kepada anak yatim." },
 { title: "Wakaf Al-Qur'an", desc: "Menyalurkan mushaf ke pelosok." },
 { title: "Bantuan Bencana", desc: "Respon cepat musibah." },
@@ -9,14 +9,17 @@ const programList = [
 ];
 
 
-export default function Program() {
+export default function ProgramSection() {
 return (
 <section className="py-16 px-6 max-w-6xl mx-auto">
-<h2 className="text-3xl font-bold text-center mb-10">Program Kami</h2>
-<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-{programList.map((p, i) => (
-<div key={i} className="border rounded-2xl p-6 shadow-sm hover:shadow-md transition">
-<h3 className="font-semibold mb-2 text-green-700">{p.title}</h3>
+<h3 className="text-2xl font-bold text-center mb-10">Program Unggulan</h3>
+<div className="grid md:grid-cols-4 gap-6">
+{programs.map((p, i) => (
+<div
+key={i}
+className="border rounded-2xl p-6 shadow-sm hover:shadow-md transition"
+>
+<h4 className="font-semibold mb-2">{p.title}</h4>
 <p className="text-sm text-slate-600">{p.desc}</p>
 </div>
 ))}
