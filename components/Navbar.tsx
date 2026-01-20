@@ -9,6 +9,7 @@ return (
 <a href="/">Beranda</a>
 <a href="/tentang">Tentang</a>
 <a href="/program">Program</a>
+<a href="/galeri">Galeri</a>
 <a href="/donasi">Donasi</a>
 </div>
 </nav>
